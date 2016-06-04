@@ -1,0 +1,40 @@
+#### Similar as previous one, we just group by state at this problem. 
+# Their final results are quite different when different tables are analyzed. Except KS,
+# OK, ND these three states, it ranks before 10 at two of these three tables.
+
+### Consider procedures by joint (combined) table
+MP      17.25
+ND      54.7231686468628
+GU      55.76896549093312
+IA      60.72257532790039
+KS      60.75257188948411
+MS      61.52210231784055
+SD      62.40600240330736
+NE      62.66453105368734
+VT      62.918721470114306
+OK      63.04567585634467
+### Consider by Readmissions table
+DE      13.414814875449663
+CO      13.494813630028327
+UT      13.516504862547693
+MA      13.662266840038546
+AZ      13.689124307053238
+ID      13.690874536681084
+NH      13.700350887733594
+PA      13.750916145696433
+CT      13.770588243041052
+OH      13.770986578580029
+Time taken: 94.232 seconds, Fetched: 10 row(s)
+
+### Consider by EffectiveCare table
+GU      79.88888888888889
+MS      85.17829021372329
+KS      85.62394195888754
+OK      86.3956771063079
+ND      87.60882352941177
+WY      87.93398533007336
+MN      88.0627687016337
+AR      88.37635092180547
+SD      88.60611510791367
+TN      89.20174848688634
+Time taken: 92.27 seconds, Fetched: 10 row(s)
