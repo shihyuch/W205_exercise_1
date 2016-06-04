@@ -1,0 +1,52 @@
+In problem 4, we use two approaches to analyze data. The first approach is direct to compare top ranks between quality (score) and survey, and variability and survey. The second approach is to evaluate correlation coefficients between quality (score) and survey, and variability and survey. The data below support these conclusions that relation bewteen survey results and procedure 
+scores are weak from (1) direct comparison, almost no overlapping, and (2) low correlation coefficients. 
+
+1. Direct comparison by ranking 
+
+No match between survey results and score ranking results. Hard to say which measures are more meaningful to measure good hospitals.
+
+NAME, Achievement_Points, Improvement_Points, Dimension_Score, (Base_Score+Consistency_Score)
+
+PHYSICIANS' SPECIALTY HOSPITAL  10 out of 10    9 out of 9      10 out of 10    100.0
+SURGICAL HOSPITAL AT SOUTHWOODS 10 out of 10    0 out of 9      10 out of 10    100.0
+NORTHSIDE MEDICAL CENTER        10 out of 10    9 out of 9      10 out of 10    100.0
+LAFAYETTE SURGICAL SPECIALTY HOSPITAL   10 out of 10    0 out of 9      10 out of 10 1                                                    00.0
+PHYSICIAN'S CARE SURGICAL HOSPITAL      10 out of 10    Not Available   10 out of 10 1                                                               00.0
+BAYLOR MEDICAL CENTER AT UPTOWN 10 out of 10    9 out of 9      10 out of 10    100.0
+MIDWEST SURGICAL HOSPITAL LLC   10 out of 10    0 out of 9      10 out of 10    100.0
+WESTLAKE REGIONAL HOSPITAL      10 out of 10    9 out of 9      10 out of 10    100.0
+FAYETTE MEDICAL CENTER  10 out of 10    9 out of 9      10 out of 10    100.0
+ORTHOPAEDIC HOSPITAL OF WISCONSIN       10 out of 10    9 out of 9      10 out of 10 1                                                               00.0
+Time taken: 48.36 seconds, Fetched: 10 row(s)
+
+2. Comparison by correlation 
+
+ID, NAME, Ave Score, Count, Total survey score (Base + Consistency)
+
+390323  ADVANCED SURGICAL HOSPITAL      74.24615383148193       62      100.0
+520194  ORTHOPAEDIC HOSPITAL OF WISCONSIN       86.05000002043587       62      100.0
+450875  QUAIL CREEK SURGICAL HOSPITAL   86.64999999318805       62      100.0
+360352  SURGICAL HOSPITAL AT SOUTHWOODS 84.27857146944318       62      100.0
+100313  SACRED HEART HOSPITAL ON THE GULF       55.24500002861023       62      100.0
+670049  NORTH CENTRAL SURGICAL CENTER LLP       72.31111113230388       62      100.0
+450834  PHYSICIANS CENTRE,THE   74.11176468344296       62      100.0
+110200  NORTHSIDE MEDICAL CENTER        85.53333336512247       62      100.0
+040152  PHYSICIANS' SPECIALTY HOSPITAL  11.0    14      100.0
+450422  BAYLOR MEDICAL CENTER AT UPTOWN 74.86470589918248       62      100.0
+Time taken: 0.077 seconds, Fetched: 10 row(s)
+
+
+Based on the following correlation numbers between quality (score) and survey, and variability and survey, their relations are low. 
+
+Quality_Survey_CORR      Variability_Survey_CORR
+0.10537921591817588     0.12614608727620044
+Time taken: 47.416 seconds, Fetched: 1 row(s)
+
+
+
+
+
+
+
+
+
